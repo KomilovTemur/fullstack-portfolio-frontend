@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,700&display=swap");
+@import url("./rest.css");
+
+:root {
+  --gray: #f1f1f1;
+  --white: #fff;
+  --black: #000;
+  --lighter-black: #070707;
+  --active-link: #606060;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: var(--white);
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1140px;
+  margin: auto;
+}
+
+header {
+  background-color: var(--gray);
+  max-height: 770px;
+}
+
+/* navbar */
+
+.header-nav {
+  padding-top: 46px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  position: relative;
+  padding: 0 12px 3px 0;
+  line-height: 1;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.logo a {
+  color: var(--black);
+}
+
+.logo::after {
+  position: absolute;
+  content: "";
+  width: 8px;
+  display: block;
+  height: 8px;
+  background: #fda300;
+  color: #fda300;
+  border-radius: 50%;
+  right: 0;
+  bottom: 0;
+}
+
+.nav-list {
+  display: flex;
+  column-gap: 50px;
+}
+
+.nav-btn {
+  display: none;
+  z-index: 9999;
+}
+
+.nav-close {
+  display: none;
+}
+
+.nav-item .nav-link {
+  color: var(--black);
+}
+
+.nav-item .nav-link.active {
+  color: var(--active-link);
+}
+
+/* content */
+
+.header-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-content {
+  margin-top: 200px;
+}
+
+.header-heading {
+  font-weight: 600;
+  font-size: 44px;
+  margin-bottom: 20px;
+}
+
+.header-content p {
+  font-weight: 400;
+  font-size: 15px;
+  width: 500px;
+}
+
+.header-img {
+  margin: 76px;
+}
+
+.header-img img {
+  width: 494px;
+  height: 613px;
+}
+
+/* services */
+
+.services {
+  padding: 90px 0;
+  display: flex;
+  column-gap: 30px;
+}
+
+.services .card {
+  width: 370px;
+  height: 228px;
+}
+
+.services .card .card-img {
+  width: 68px;
+  height: 68px;
+  margin-bottom: 30px;
+}
+
+.services .card .service-title {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.services .card .service-text {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+/* portfolio */
+.portfolio {
+  background: var(--gray);
+  padding: 90px 0;
+}
+
+.project + .project {
+  margin-top: 90px;
+}
+
+.portfolio-title {
+  font-size: 34px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-img {
+  margin-bottom: 40px;
+}
+
+.project-link {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: underline !important;
+  color: var(--black);
+}
+
+/* footer */
+footer {
+  padding: 90px 0;
+  text-align: center;
+}
+
+footer .title {
+  font-weight: 600;
+  font-size: 34px;
+  margin-bottom: 40px;
+}
+
+footer .title-text {
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+footer .massage {
+  padding: 7px 22px;
+  background: var(--lighter-black);
+  display: inline-block;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--white);
+  margin-bottom: 80px;
+  transition: all 0.5s all;
+}
+
+footer .massage:hover,
+footer .massage:focus {
+  background-color: var(--black);
+}
+
+footer .massage:active {
+  position: relative;
+  top: 1px;
+  background-color: var(--black);
+}
+.socials {
+  width: 342px;
+  margin: auto;
+  display: flex;
+  column-gap: 61px;
+  margin-bottom: 41px;
+}
+
+.social-link {
+  width: 40px;
+  height: 40px;
+}
+
+.social-text {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+
+@import url(./media.css);
