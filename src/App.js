@@ -1,8 +1,16 @@
 import React from "react";
-import Imports from "./components";
+import { Route, Routes } from "react-router-dom";
+import Admin from "./components/admin/Admin";
+import Imports from "./components/index";
+
 
 const App = () => {
-  return <Imports />;
+  return (
+    <Routes>
+      <Route path="/" element={<Imports />} />
+      <Route path="/admin" element={<Admin />} />
+    </Routes>
+  );
 };
 
-export default App
+export default App;
